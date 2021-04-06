@@ -1,6 +1,7 @@
 # Hidden text using opencv
 
 <ul>Requirements
+    <li>A device with internal webcam</li>
     <li>Flask Framework 1.1.2</li>
     <li>Python 3.8.5 </li>
     <li>Anaconda 64-bit</li>
