@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+	body {
+			background-image:url('http://static1.squarespace.com/static/56674fd5e0327c45f99cf7dd/5859b6cf20099ea52d2af9bd/5d0bce33a2343f00014337f2/1572545984604/vector+header.jpg?format=1500w');
+			background-size: cover;
+			font-family:serif;
+			font-weight: bold;
+		}
+	.row{
+	text-align:center;
+	padding-top:50px;
+	}
+	input
+	{
+	margin-top:10px;
+	}
+	input[type=submit]:hover
+	{
+	background-color:black;
+	color: white;
+	}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="row" >
+				<img src="{{ url_for('video_feed') }}" width="50%">
+				<br>
+			<form action="{{ url_for('image') }}">
+				<input type="submit" value="Click picture">
+			</form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+	body {
+			background-image:url('http://static1.squarespace.com/static/56674fd5e0327c45f99cf7dd/5859b6cf20099ea52d2af9bd/5d0bce33a2343f00014337f2/1572545984604/vector+header.jpg?format=1500w');
+			background-size: cover;
+			font-family:serif;
+			font-weight: bold;
+		}
+	.row{
+	text-align:center;
+	padding-top:35px;
+	}
+	input
+	{
+	margin-top:10px;
+	}
+	input[type=submit]:hover
+	{
+	background-color:black;
+	color: white;
+	}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="row" >
+			<img src="/static/images/picture1.jpg" alt="Related Book 1" width="45%">
+			<br/><br/>
+			<form action="{{ url_for('retake') }}">
+				<input type="submit" value="retake the picture"/>
+			</form>
+			<form action="{{ url_for('hiddenmsg') }}">
+				<input type="submit"  value="confirm the picture"/>
+			</form>
+		
+	</div>
+    </div>
+</div>
+</body>
+</html>

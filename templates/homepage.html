@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+	body {
+			background-image:url('https://www.ultrahdwallpaper.in/uploads/cache/1853036340/4k_Abstract_Wallpapers_for_Mobile-400x270-MM-100.jpg');
+			background-size: cover;
+			font-family:serif;
+			font-weight: bold;
+		}
+	.row{
+		text-align:center;
+	}
+	.row1
+	{
+		text-align:center;
+		margin-top:150px;
+	}
+	input[type=submit]:hover
+	{
+	background-color:black;
+	color: white;
+	}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<h1 class="row1"> WELCOME</h1>
+    <div class="row" style = 'display:flex; position:absolute; top:0; bottom:0; right:0; left:0; '>
+		<div style = 'margin:auto;'>
+            <h1>Click on the below button to capture a photo</h1>
+            <form action={{ url_for('capture') }} >
+					<input type="submit" value="Start Camera">
+			</form >
+			<h1> and reveal your hidden message!</h1>
+		</div>
+    </div>
+</div>
+</body>
+</html>
